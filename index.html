@@ -111,7 +111,7 @@
     <div class="gradient-bg"></div>
     <div id="scene-container"></div>
     <header>
-        <div class="logo">Logo</div>
+        <div class="logo">BytheWay</div>
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav class="dropdown">
             <a href="#">Home</a>
@@ -187,16 +187,16 @@
 
             if (scrollPosition > lastScrollTop) {
                 if (duck) {
-                    duck.rotation.y += 0.1;
+                    duck.rotation.y += 0.03;
                 } else {
-                    cube.rotation.y += 0.1;
+                    cube.rotation.y += 0.03;
                 }
             } else {
 
                 if (duck) {
-                    duck.rotation.y -= 0.1;
+                    duck.rotation.y -= 0.03;
                 } else {
-                    cube.rotation.y -= 0.1;
+                    cube.rotation.y -= 0.03;
                 }
             }
             lastScrollTop = scrollPosition;
