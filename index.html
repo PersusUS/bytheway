@@ -153,7 +153,7 @@
 
         const loader = new THREE.GLTFLoader();
         loader.load(
-            '/render/duck_duck_duck.glb',
+            '/render/pato.glb',
             (gltf) => {
                 duck = gltf.scene;
                 duck.scale.set(2, 2, 2);
@@ -187,16 +187,16 @@
 
             if (scrollPosition > lastScrollTop) {
                 if (duck) {
-                    duck.rotation.y += 0.03;
+                    duck.rotation.y -= 0.05;
                 } else {
-                    cube.rotation.y += 0.03;
+                    cube.rotation.y -= 0.05;
                 }
             } else {
 
                 if (duck) {
-                    duck.rotation.y -= 0.03;
+                    duck.rotation.y += 0.05;
                 } else {
-                    cube.rotation.y -= 0.03;
+                    cube.rotation.y += 0.05;
                 }
             }
             lastScrollTop = scrollPosition;
